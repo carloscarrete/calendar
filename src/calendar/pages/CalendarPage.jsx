@@ -6,6 +6,7 @@ import { Navbar } from '../components/Navbar'
 import { localizer, getMessages } from '../../helpers'
 import { CalendarEvent } from '../components/CalendarEvent'
 import { useState } from 'react'
+import { CalendarModal } from '../components/CalendarModal'
 
 
 
@@ -77,6 +78,8 @@ export const CalendarPage = () => {
         onView={onViewChanged}
         defaultView= {lastView}
       />
+
+      <CalendarModal />
     </>
   )
 }
