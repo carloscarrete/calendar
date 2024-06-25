@@ -9,7 +9,7 @@ export const FabAddNew = () => {
     const {openDateModal} = useUiStore();
 
     const handleNewEvent = () =>{
-        setActiveEvent({
+        setActiveEvent({     
             title: '',
             notes: '',
             start: new Date(),
