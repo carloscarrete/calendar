@@ -16,8 +16,6 @@ export const AppRouter = () => {
         return <h1>Loading...</h1>  /* Loading */
     }
 
-    console.log(status)
-
     return (
         <Routes>
             {
