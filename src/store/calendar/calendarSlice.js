@@ -30,16 +30,17 @@ export const calendarSlice = createSlice({
                 state.activeEvent = null;
             }
         },
-
+        
         onLoadEvents: (state, {payload = []}) => {
             state.isLoadingEvents = false;
             state.events = [...payload];  /* It could be with foreach and some | 427 */
         },
         onLogoutCalendar: (state) => {
+            state.isLoadingEvents = true;
             state.events = [];
             state.activeEvent = null;
         }
     },
 });
 
-export const {  onSetActiveEvent, onAddNewEvent, onUpdateEvent, onDeleteEvent, onLoadEvents } = calendarSlice.actions;
+export const {  onSetActiveEvent, onAddNewEvent, onUpdateEvent, onDeleteEvent, onLoadEvents, onLogoutCalendar } = calendarSlice.actions;
