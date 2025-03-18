@@ -1,8 +1,133 @@
-# React + Vite
+# Calenova
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+¡Bienvenido a la **Calenova**! Esta es una aplicación de calendario interactiva y dinámica construida con **React**, **Vite**, **Redux Toolkit**, y otras tecnologías modernas. La aplicación permite a los usuarios gestionar eventos, autenticarse, y visualizar eventos en un calendario interactivo.
 
-Currently, two official plugins are available:
+## Características Principales
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Autenticación de Usuarios**: Registro y inicio de sesión con validación de credenciales.
+- **Gestión de Eventos**: Crear, editar, eliminar y visualizar eventos en un calendario interactivo.
+- **Interfaz de Usuario Amigable**: Diseño moderno y responsive, con modales y botones flotantes para una experiencia de usuario óptima.
+- **Persistencia de Datos**: Los eventos se gestionan a través de una API y se almacenan en el servidor.
+- **Localización**: Soporte para idioma español en el calendario y formatos de fecha.
+- **Notificaciones**: Uso de SweetAlert2 para notificaciones y alertas visuales.
+
+## Tecnologías Utilizadas
+
+- **React**: Biblioteca de JavaScript para construir la interfaz de usuario.
+- **Vite**: Herramienta de construcción rápida para desarrollo moderno.
+- **Redux Toolkit**: Gestión del estado global de la aplicación.
+- **React Router**: Navegación y enrutamiento dentro de la aplicación.
+- **React Big Calendar**: Componente de calendario interactivo.
+- **Axios**: Cliente HTTP para realizar peticiones a la API.
+- **SweetAlert2**: Alertas y notificaciones visuales.
+- **Bootstrap**: Framework de CSS para estilos y diseño responsive.
+- **Date-fns**: Librería para manipulación de fechas.
+
+## Estructura del Proyecto
+
+```plaintext
+carloscarrete-calendar/
+├── README.md
+├── index.html
+├── package.json
+├── vite.config.js
+├── .env-template
+├── .eslintrc.cjs
+├── public/
+└── src/
+    ├── CalendarApp.jsx
+    ├── index.css
+    ├── main.jsx
+    ├── api/
+    │   ├── calendarApi.js
+    │   └── index.js
+    ├── assets/
+    ├── auth/
+    │   ├── index.js
+    │   └── pages/
+    │       ├── LoginPage.css
+    │       └── LoginPage.jsx
+    ├── calendar/
+    │   ├── index.js
+    │   ├── components/
+    │   │   ├── CalendarEvent.jsx
+    │   │   ├── CalendarModal.jsx
+    │   │   ├── FabAddNew.jsx
+    │   │   ├── FabDelete.jsx
+    │   │   └── Navbar.jsx
+    │   └── pages/
+    │       └── CalendarPage.jsx
+    ├── helpers/
+    │   ├── calendarLocalizer.js
+    │   ├── convertEventToDate.js
+    │   ├── getEnv.js
+    │   ├── getMessages.js
+    │   └── index.js
+    ├── hooks/
+    │   ├── index.js
+    │   ├── useAuthStore.js
+    │   ├── useCalendarStore.js
+    │   ├── useForm.js
+    │   └── useUiStore.js
+    ├── router/
+    │   ├── AppRouter.jsx
+    │   └── index.js
+    └── store/
+        ├── index.js
+        ├── store.js
+        ├── auth/
+        │   └── authSlice.js
+        ├── calendar/
+        │   └── calendarSlice.js
+        └── ui/
+            └── uiSlice.js
+```
+
+## Instalación
+
+1. **Clona el repositorio**:
+   ```bash
+   git clone https://github.com/tu-usuario/carloscarrete-calendar.git
+   cd carloscarrete-calendar
+   ```
+
+2. **Instala las dependencias**:
+   ```bash
+   npm install
+   ```
+
+3. **Configura el entorno**:
+   - Crea un archivo `.env` basado en `.env-template` y configura la variable `VITE_API_URL` con la URL de tu API.
+
+4. **Inicia el servidor de desarrollo**:
+   ```bash
+   npm run dev
+   ```
+
+5. **Abre la aplicación**:
+   - La aplicación estará disponible en `http://localhost:5173`.
+
+## Scripts Disponibles
+
+- **`npm run dev`**: Inicia el servidor de desarrollo.
+- **`npm run build`**: Compila la aplicación para producción.
+- **`npm run lint`**: Ejecuta ESLint para verificar el código.
+- **`npm run preview`**: Previsualiza la aplicación compilada.
+
+## Contribución
+
+¡Las contribuciones son bienvenidas! Si deseas mejorar esta aplicación, sigue estos pasos:
+
+1. Haz un fork del repositorio.
+2. Crea una rama para tu feature (`git checkout -b feature/nueva-funcionalidad`).
+3. Realiza tus cambios y haz commit (`git commit -m 'Añade nueva funcionalidad'`).
+4. Haz push a la rama (`git push origin feature/nueva-funcionalidad`).
+5. Abre un Pull Request.
+
+## Licencia
+
+Este proyecto está bajo la licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más detalles.
+
+---
+
+¡Gracias por usar la **Calendar App**! Esperamos que disfrutes gestionando tus eventos de manera eficiente y organizada. Si tienes alguna pregunta o sugerencia, no dudes en contactarnos. 😊
