@@ -114,6 +114,19 @@ carloscarrete-calendar/
 - **`npm run lint`**: Ejecuta ESLint para verificar el código.
 - **`npm run preview`**: Previsualiza la aplicación compilada.
 
+## Capturas
+### Pantalla principal
+![Calendario Principal](https://github.com/carloscarrete/calendar/blob/main/captures/c1.png?raw=true)
+
+### Agregar nuevo evento
+![Agregar nuevo evento](https://github.com/carloscarrete/calendar/blob/main/captures/c2.png?raw=true)
+
+### Vista de varios eventos
+![Eventos](https://github.com/carloscarrete/calendar/blob/main/captures/c3.png?raw=true)
+
+### Vista varios eventos (día)
+![Eventos vista de día](https://github.com/carloscarrete/calendar/blob/main/captures/c4.png?raw=true)
+
 ## Backend
 Puedes visitar el backend de este proyecto en el siguiente enlace https://github.com/carloscarrete/calendar-backend
 
