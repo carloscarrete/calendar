@@ -49,6 +49,10 @@ export const LoginPage = () => {
         }
     }, [errorMessage])
 
+    const loginTestUser = () => {
+        startLogin({ email: 'test@user.com', password: '12345678' });
+    }
+
 
     return (
         <div className="container login-container">
@@ -81,6 +85,12 @@ export const LoginPage = () => {
                                 type="submit"
                                 className="btnSubmit"
                                 value="Login"
+                            />
+                            <input 
+                                type="button"
+                                className="btnInvitado"
+                                value="Ingresar como invitado"
+                                onClick={loginTestUser}
                             />
                         </div>
                     </form>

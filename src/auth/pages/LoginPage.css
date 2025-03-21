@@ -32,6 +32,18 @@
     cursor: pointer;
     margin-top: 10px;
 }
+
+.btnInvitado{
+    width: 100%;
+    border-radius: 1rem;
+    padding: 1.5%;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    color: #fff;
+    background-color: #17385c;
+}
+
 .login-form-1 .btnSubmit{
     color: #fff;
     background-color: #0062cc;
