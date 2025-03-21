@@ -87,7 +87,7 @@ carloscarrete-calendar/
 
 1. **Clona el repositorio**:
    ```bash
-   git clone https://github.com/tu-usuario/carloscarrete-calendar.git
+   git clone https://github.com/carloscarrete/calendar.git
    cd carloscarrete-calendar
    ```
 
@@ -113,6 +113,9 @@ carloscarrete-calendar/
 - **`npm run build`**: Compila la aplicación para producción.
 - **`npm run lint`**: Ejecuta ESLint para verificar el código.
 - **`npm run preview`**: Previsualiza la aplicación compilada.
+
+## Backend
+Puedes visitar el backend de este proyecto en el siguiente enlace https://github.com/carloscarrete/calendar-backend
 
 ## Contribución
 
