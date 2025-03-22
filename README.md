@@ -88,7 +88,7 @@ carloscarrete-calendar/
 1. **Clona el repositorio**:
    ```bash
    git clone https://github.com/carloscarrete/calendar.git
-   cd carloscarrete-calendar
+   cd calendar
    ```
 
 2. **Instala las dependencias**:
